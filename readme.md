@@ -1,4 +1,4 @@
-## [bank security panel](https://github.com/DmitryShvedov88/Comics_pusher "LINK TO THE PROJECT")
+## [bank security panel](https://github.com/DmitryShvedov88/Bank-security-panel "LINK TO THE PROJECT")
 
 This program made for education purpose
 The program helps to carry out the access mode in the bank's vault.
