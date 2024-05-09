@@ -26,9 +26,9 @@ share/python-wheels/
 *.egg
 MANIFEST
 story
-сайт/
-Питон/
-локально/
+site
+Python
+local
 pyvenv.cfg
 
 # PyInstaller
