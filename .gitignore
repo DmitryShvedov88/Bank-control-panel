@@ -26,6 +26,9 @@ share/python-wheels/
 *.egg
 MANIFEST
 story
+сайт
+Питон
+локально
 
 # PyInstaller
 #  Usually these files are written by a python script from a template
@@ -108,6 +111,8 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+Урок
+Локально
 
 # mypy
 .mypy_cache/
