@@ -8,24 +8,23 @@ env.read_env()
 DATABASES = {
     'default': {
         'ENGINE': env("ENGINE"),
-        'HOST': env("HOST"),
-        'PORT': env("PORT"),
-        'NAME': env("NAME"),
-        'USER': env("USER"),
-        'PASSWORD': env("PASSWORD"),
+        'HOST': env("DB_HOST"),
+        'PORT': env("DB_PORT"),
+        'NAME': env("DB_NAME"),
+        'USER': env("DB_USER"),
+        'PASSWORD': env("DB_PASSWORD"),
     }
 }
 
 INSTALLED_APPS = ['datacenter']
 
-SECRET_KEY = 'REPLACE_ME'
+SECRET_KEY = env("SECRET_KEY")
 
-DEBUG = False
+DEBUG = env.bool("DEBUG", default=False)
 
 ROOT_URLCONF = 'project.urls'
 
-ALLOWED_HOSTS = ['*']
-
+ALLOWED_HOSTS = env.list("ALLOWED_HOSTS")
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TEMPLATES = [
@@ -36,13 +35,12 @@ TEMPLATES = [
     },
 ]
 
+USE_L10N = True
 
-USE_L10N = env("USE_L10N")
+LANGUAGE_CODE = 'ru-ru'
 
-LANGUAGE_CODE = env("LANGUAGE_CODE")
+TIME_ZONE = 'Europe/Moscow'
 
-TIME_ZONE = env("TIME_ZONE")
+USE_TZ = True
 
-USE_TZ = env("USE_TZ")
-
-DEFAULT_AUTO_FIELD = env("DEFAULT_AUTO_FIELD")
+DEFAULT_AUTO_FIELD = 'django.db.models.AutoField'
