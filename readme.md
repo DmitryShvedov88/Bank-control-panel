@@ -18,7 +18,6 @@ ENGINE, DB_HOST, DB_PORT, DB_NAME, DB_USER, DB_PASSWORD, SECRET_KEY, DEBUG, ALLO
     ALLOWED_HOSTS - A method that checks whether the host matches the settings set by this setting
     APP_DIRS - indicates whether the template engine will search for them inside the application folders in the templates folder
 
-You can learn more about the necessary variables in the env.example file.
 Just deploy the virtual environment of the project using the necessary variables, activate it, and you cat start program.
 
 ### To start a program just do this.
