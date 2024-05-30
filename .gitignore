@@ -59,8 +59,7 @@ coverage.xml
 .pytest_cache/
 cover/
 Thumbs.db
-poetry.lock
-pyproject.toml
+
 
 # Translations
 *.mo
