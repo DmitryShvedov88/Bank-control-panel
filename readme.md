@@ -7,6 +7,17 @@ The program helps to carry out the access mode in the bank's vault.
 For the program to function, you will need the following environment variables: 
 ENGINE, DB_HOST, DB_PORT, DB_NAME, DB_USER, DB_PASSWORD, SECRET_KEY, DEBUG, ALLOWED_HOSTS, APP_DIRS.
 
+    ENGINE - specify the database engine and its digital adapter
+    DB_HOST - a device that provides client-server services
+    DB_PORT - the IP address of the machine on which you are deploying the database
+    DB_NAME - that database name
+    DB_USER - that user name
+    DB_PASSWORD - that password name
+    SECRET_KEY - It is used as a cryptographic signature
+    DEBUG - database debugging mode
+    ALLOWED_HOSTS - A method that checks whether the host matches the settings set by this setting
+    APP_DIRS - indicates whether the template engine will search for them inside the application folders in the templates folder
+
 You can learn more about the necessary variables in the env.example file.
 Just deploy the virtual environment of the project using the necessary variables, activate it, and you cat start program.
 
